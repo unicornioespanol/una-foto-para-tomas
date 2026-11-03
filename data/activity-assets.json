@@ -1,0 +1,57 @@
+{
+  "P1": {
+    "portrait": "assets/activities/tomas-portrait.png",
+    "characters": {
+      "lucia": "assets/activities/lucia.png",
+      "abuela": "assets/activities/abuela.png",
+      "tomas": "assets/activities/tomas-portrait.png"
+    },
+    "hotspots": {
+      "coordinate_space": "normalized-image-rectangle-after-object-fit-contain",
+      "gafas": {
+        "x": 0.265,
+        "y": 0.325,
+        "width": 0.46,
+        "height": 0.12
+      },
+      "bigote": {
+        "x": 0.36,
+        "y": 0.47,
+        "width": 0.29,
+        "height": 0.1
+      }
+    },
+    "min_hit_target_css_px": 44,
+    "keyboard_alternative": true
+  },
+  "P2": {
+    "flores": "assets/activities/flores.png",
+    "agua": "assets/activities/agua.png",
+    "pan": "assets/activities/pan.png",
+    "foto": "assets/activities/foto.png"
+  },
+  "E1": {
+    "wind": "assets/scenes/s03-desktop.png",
+    "cat-photo": "assets/scenes/a05-desktop.png",
+    "ball": "assets/scenes/a06-desktop.png",
+    "cat-memory": "assets/scenes/a07-desktop.png",
+    "drawing-start": "assets/scenes/b05-desktop.png",
+    "guitar": "assets/scenes/b06-desktop.png",
+    "drawing-done": "assets/scenes/b07-desktop.png"
+  },
+  "E2": {
+    "cat": "assets/activities/memory-cat.png",
+    "guitar": "assets/activities/memory-guitar.png"
+  },
+  "E3": {
+    "jardin-gato": "assets/album/jardin-gato.png",
+    "jardin-guitarra": "assets/album/jardin-guitarra.png",
+    "jardin-pelota": "assets/album/jardin-pelota.png",
+    "cocina-gato": "assets/album/cocina-gato.png",
+    "cocina-guitarra": "assets/album/cocina-guitarra.png",
+    "cocina-pelota": "assets/album/cocina-pelota.png",
+    "salon-gato": "assets/album/salon-gato.png",
+    "salon-guitarra": "assets/album/salon-guitarra.png",
+    "salon-pelota": "assets/album/salon-pelota.png"
+  }
+}

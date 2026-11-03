@@ -1,0 +1,39 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    command: ["postgres", "-c", "ssl=on", "-c", "ssl_cert_file=/tls/server.crt", "-c", "ssl_key_file=/tls/server.key"]
+    environment:
+      POSTGRES_DB: tomas
+      POSTGRES_USER: book
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backups/production:/backups
+      - ./backups/postgres-tls:/tls:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U book -d tomas"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+  book:
+    build: .
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3000
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:?Set HTTPS PUBLIC_ORIGIN}
+      DATABASE_URL: postgresql://book:${POSTGRES_PASSWORD}@postgres:5432/tomas?sslmode=verify-full&sslrootcert=/tls/server.crt
+      RESEARCH_PROJECT_ID: ${RESEARCH_PROJECT_ID:-tomas}
+      TELEMETRY_MODE: ${TELEMETRY_MODE:-off}
+      TRUST_PROXY: 1
+    volumes:
+      - ./backups/postgres-tls/server.crt:/tls/server.crt:ro
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  postgres_data:

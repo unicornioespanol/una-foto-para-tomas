@@ -1,0 +1,14 @@
+import { readFile,writeFile,mkdir,copyFile } from 'node:fs/promises';
+import { build } from 'vite';
+import {audioFiles} from './audio-assets.mjs';
+const result=await build({configFile:false,logLevel:'warn',base:'./',build:{write:false,target:'es2020',lib:{entry:'src/main.js',name:'TomasBook',formats:['iife']},minify:true}});
+const output=Array.isArray(result)?result[0].output:result.output;const script=output.find(o=>o.type==='chunk').code;
+const css=output.filter(o=>o.type==='asset'&&o.fileName.endsWith('.css')).map(o=>o.source).join('\n');
+if(script.includes('import.meta'))throw new Error('Unresolved module metadata');
+const index=await readFile('index.html','utf8');
+const html=index.replace(/<script[^>]+src="[^"]+"[^>]*><\/script>/,'').replace('</head>',()=>`<style>${css}</style></head>`).replace('</body>',()=>`<script>${script.replaceAll('</script','<\\/script')}</script></body>`);
+await writeFile('Una foto para Tomas.html',html);
+await mkdir('offline/assets/audio',{recursive:true});await writeFile('offline/Una foto para Tomas.html',html);
+for(const name of audioFiles)await copyFile(`assets/audio/${name}`,`offline/assets/audio/${name}`);
+await writeFile('offline/LEEME.txt','Abre Una foto para Tomas.html. Mantén la carpeta assets/audio a su lado. El audio no está incrustado en el HTML. La analítica está desactivada en file://.\n');
+console.log(`Offline book written (${(Buffer.byteLength(html)/1048576).toFixed(1)} MB HTML + ${audioFiles.length} separate MP3; analytics off for file://).`);

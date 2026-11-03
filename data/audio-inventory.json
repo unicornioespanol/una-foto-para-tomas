@@ -1,0 +1,147 @@
+[
+  {
+    "id": "s01",
+    "file": "s01 · Hoy es el Día de Muertos_1.mp3",
+    "sha256": "35a339bf490b6c72860c4919198400763e004522fcac14724695c13959fa6080"
+  },
+  {
+    "id": "s02",
+    "file": "s02 · El abuelo Tomás.mp3",
+    "sha256": "7d9d4d69f1e013ba3524a75aafec890ef483f532ad7538fa3f16be4877137986"
+  },
+  {
+    "id": "s03",
+    "file": "s03 · La foto vuela_2.mp3",
+    "sha256": "2c714c1f4fcb5e20651cdec4ffc44dda96709f5aa66e275f6ead9cbee2696c96"
+  },
+  {
+    "id": "s04",
+    "file": "s04 · ¿Qué hacemos_2.mp3",
+    "sha256": "2b93b3c4328d210caeb48b61b9513cfb4dc1bd8a4b1d1b2793b1a966c733b474"
+  },
+  {
+    "id": "a05",
+    "file": "a05 · El gato negro_2.mp3",
+    "sha256": "01ca1598a66cabcaceb9d6b578816deb891a17f68f9d3c2735e5f4471fd902e8"
+  },
+  {
+    "id": "a06",
+    "file": "a06 · La pelota_1.mp3",
+    "sha256": "395ec0f8da4f69d243911afc24fd319685cc6b860c27f47ea438670d99bf18ff"
+  },
+  {
+    "id": "a07",
+    "file": "a07 · Otra foto_2.mp3",
+    "sha256": "9a0981e0b0a5399bd85020237b1ab10fb15984864bde26761c84fa1422134258"
+  },
+  {
+    "id": "b05",
+    "file": "b05 · El dibujo empieza_2.mp3",
+    "sha256": "aa31b43ce3bb73f5374f928755ec48bbac3377fa00794ced9677fab5f5bb2570"
+  },
+  {
+    "id": "b06",
+    "file": "b06 · La guitarra_2.mp3",
+    "sha256": "ab5436a76d80cd4aca489de26a3933e47e8d59fd9fde563328a2e46124dfec98"
+  },
+  {
+    "id": "b07",
+    "file": "b07 · Ahora sí_1.mp3",
+    "sha256": "04e93c2054feda343c0570a409766e026df66ce266bd0985b62ab19a0f092d89"
+  },
+  {
+    "id": "s08",
+    "file": "s08 · La familia está aquí_1.mp3",
+    "sha256": "5f8225cf315fe74efeb726770dad1a92375e36a4e7e418e4baf2cfccf0434f21"
+  },
+  {
+    "id": "end-song",
+    "file": "end-song · Una canción_1.mp3",
+    "sha256": "edbf97ad18c29e5acc7e6cd6824556686c4ae838bf33e29f641ff98b1c9c5d6e"
+  },
+  {
+    "id": "end-story:photo",
+    "file": "end-story-photo · Una historia · ruta de la foto_2.mp3",
+    "sha256": "b74ca3837a6c9742a3887bffd4da1f021e5a1b29bcc05574087192e4f9b49e08"
+  },
+  {
+    "id": "end-story:drawing",
+    "file": "end-story-drawing · Una historia · ruta del dibujo_2.mp3",
+    "sha256": "e4a8c9e9bfb187cd40e5043f30e78f0c997427cd6c5e4aa6465d6566777c99ac"
+  },
+  {
+    "id": "pre-who-lucia",
+    "file": "pre-who-lucia_1.mp3",
+    "sha256": "83884cfdb8c3006531dc3d638c8acea52b777593f815f6c39ec978e688b272ad"
+  },
+  {
+    "id": "pre-who-abuela",
+    "file": "pre-who-abuela_1.mp3",
+    "sha256": "29008b90a511c538196375eb9646a31a0f7265abde7d60486858b0bb168b0358"
+  },
+  {
+    "id": "pre-who-tomas",
+    "file": "pre-who-tomas_1.mp3",
+    "sha256": "0bdba23da6a0e769bbb1d220c9d879ad9ce3ef122f2d899bf77d21aa38d7ddb7"
+  },
+  {
+    "id": "pre-touch-gafas",
+    "file": "pre-touch-gafas_1.mp3",
+    "sha256": "a7868740d2b5a636eb6dd281121f50fe4fb9618676c584dc5dca58b531bc0671"
+  },
+  {
+    "id": "pre-touch-bigote",
+    "file": "pre-touch-bigote_2.mp3",
+    "sha256": "76eab1d7081660336b3d35e9b9e5a6952f77928027c5ebe024072f182ca033a0"
+  },
+  {
+    "id": "pre-ofrenda-flores",
+    "file": "pre-ofrenda-flores_1.mp3",
+    "sha256": "d9b854006aa1467e554c3bcd64e2580745c01633e1689dd009b137e5fa50a6e4"
+  },
+  {
+    "id": "pre-ofrenda-agua",
+    "file": "pre-ofrenda-agua_1.mp3",
+    "sha256": "56574123b3ea0f193f7cf465d6b33f6033e0d5408816bd4673ee1b8b2aeb079c"
+  },
+  {
+    "id": "pre-ofrenda-pan",
+    "file": "pre-ofrenda-pan_1.mp3",
+    "sha256": "814d2a6509a838cdac459fd04ddaf8e1079f1eec8e872350ce92574f95710b2a"
+  },
+  {
+    "id": "pre-ofrenda-foto",
+    "file": "pre-ofrenda-foto_1.mp3",
+    "sha256": "ab8e9efe0ab21c00b88adffa96135e15fbc778b557e8782c4d20a14a266d135a"
+  },
+  {
+    "id": "choice-buscar-foto",
+    "file": "choice-buscar-foto_2.mp3",
+    "sha256": "93b4168774b0a6bf051da736cbaf9c6f34b09e5c60e3247e06f80ec55f0862c1"
+  },
+  {
+    "id": "choice-dibujar",
+    "file": "choice-dibujar_1.mp3",
+    "sha256": "a91847e82008b7230f21dbfb6c6fb4c4708e56ecdbb93fb97bd79904465bbaab"
+  },
+  {
+    "id": "choice-cancion",
+    "file": "choice-cancion_1.mp3",
+    "sha256": "16e12ba7fab215feb10a675dd3417328ed7fd1524e19fedf9385e072c29c6147"
+  },
+  {
+    "id": "choice-historia",
+    "file": "choice-historia_1.mp3",
+    "sha256": "f32daf6d6fafaa2f5798dfc1e094dcfcf3ddf1167a92c8d0ca9cb34b7d501c2c"
+  },
+  {
+    "id": "post-e2-gato",
+    "file": "post-e2-gato_2.mp3",
+    "sha256": "e9d71ede70ca2af102bbc757cc7dc24d57112db82ca1cbe725536bcfd46059ed"
+  },
+  {
+    "id": "post-e2-cantar",
+    "file": "post-e2-cantar_1.mp3",
+    "sha256": "3dce9a23cde5bbeb4771e5e7c026f97edb1312f1a35abe77448a0869b835df2a"
+  }
+]

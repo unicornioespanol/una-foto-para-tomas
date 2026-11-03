@@ -1,0 +1,23 @@
+node_modules/
+.npm-cache/
+dist/
+test-results/
+*.log
+runtime/
+.env*
+!.env.example
+backups/
+offline/
+Una foto para Tomas.html
+*.dump
+*.sql.gz
+*.sql
+!server/migrations/*.sql
+*.backup
+*.pem
+*.key
+*.p12
+*.pfx
+.tomas-backup-*/
+# Original update package is retained locally; npm run build uses assets/ and data/.
+/book_update/

@@ -1,0 +1,6 @@
+import {spawnSync} from 'node:child_process';import {mkdtemp,writeFile} from 'node:fs/promises';import {randomBytes} from 'node:crypto';import {tmpdir} from 'node:os';import {join} from 'node:path';import assert from 'node:assert/strict';import {openDatabase} from '../server/db.mjs';import {verifyPassword} from '../server/security.mjs';
+const root=await mkdtemp(join(tmpdir(),'tomas-bootstrap-')),localPath=join(root,'nested','database');
+const password=randomBytes(32).toString('base64url'),file=join(root,'password.txt');await writeFile(file,password,{mode:0o600});
+const setup=spawnSync(process.execPath,['server/cli.mjs','create-admin','--username','bootstrap-admin','--password-file',file],{encoding:'utf8',env:{...process.env,NODE_ENV:'development',DATABASE_URL:'',DEV_DATABASE_PATH:localPath}});
+assert.equal(setup.status,0,setup.stderr);assert(!setup.stdout.includes(password));assert(!setup.stderr.includes(password));
+const db=await openDatabase({localPath});try{const {rows:[admin]}=await db.query('SELECT * FROM admin_users WHERE username=$1',['bootstrap-admin']);assert(admin);assert(await verifyPassword(password,admin.password_hash));console.log('First-admin CLI verified on a fresh nested PostgreSQL directory; secret output not logged.')}finally{await db.close()}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "preReading": [
+    {
+      "id": "pre-family",
+      "type": "identify-and-predict",
+      "title": "¿Quién es quién?",
+      "steps": [
+        {
+          "type": "listen-identify",
+          "items": [
+            {
+              "target": "lucia",
+              "text": "Soy Lucía."
+            },
+            {
+              "target": "abuela",
+              "text": "Soy la abuela de Lucía."
+            },
+            {
+              "target": "tomas",
+              "text": "Tomás es el abuelo de Lucía."
+            }
+          ],
+          "feedbackCorrect": "Sí. Escucha otra vez.",
+          "feedbackRetry": "Mira y escucha otra vez."
+        },
+        {
+          "type": "hotspot",
+          "image": "tomas-portrait",
+          "targets": [
+            {
+              "id": "glasses",
+              "label": "Las gafas"
+            },
+            {
+              "id": "moustache",
+              "label": "El bigote"
+            }
+          ],
+          "text": "Busca las gafas y el bigote."
+        },
+        {
+          "type": "prediction",
+          "text": "¿Cómo es Tomás?",
+          "options": [
+            "Serio",
+            "Divertido",
+            "No sé"
+          ],
+          "graded": false,
+          "stateKey": "prediction"
+        }
+      ]
+    },
+    {
+      "id": "pre-ofrenda",
+      "type": "match-objects",
+      "title": "Preparamos la ofrenda",
+      "intro": "Hoy es el Día de Muertos. La familia recuerda a Tomás.",
+      "items": [
+        {
+          "id": "flowers",
+          "label": "Flores"
+        },
+        {
+          "id": "water",
+          "label": "Agua"
+        },
+        {
+          "id": "bread",
+          "label": "Pan"
+        },
+        {
+          "id": "photo",
+          "label": "Foto"
+        }
+      ],
+      "text": "Escucha y coloca los objetos.",
+      "outro": "Es una ofrenda para Tomás.",
+      "validation": "Match the spoken object to its labeled slot, not a universal cultural rule."
+    }
+  ],
+  "postReading": [
+    {
+      "id": "post-order",
+      "type": "sequence",
+      "title": "Nuestra historia",
+      "text": "Ordena las imágenes.",
+      "routeItems": {
+        "photo": [
+          "wind",
+          "cat-photo",
+          "ball",
+          "cat-memory"
+        ],
+        "drawing": [
+          "wind",
+          "drawing-start",
+          "guitar",
+          "drawing-done"
+        ]
+      },
+      "feedbackCorrect": "Esta es nuestra historia.",
+      "feedbackRetry": "Mira las imágenes. ¿Qué pasa primero?",
+      "graded": true,
+      "replayText": {
+        "photo": "La foto vuela al patio. Un gato está encima de la foto. Lucía mueve una pelota. Lucía tiene la foto.",
+        "drawing": "La foto vuela al patio. Lucía dibuja al abuelo. La abuela tiene una guitarra. Ahora hay un dibujo de Tomás."
+      }
+    },
+    {
+      "id": "post-evidence",
+      "type": "interpretation",
+      "title": "¿Serio o divertido?",
+      "text": "Ahora, ¿qué sabes de Tomás?",
+      "showOriginalPrediction": true,
+      "options": [
+        "Serio",
+        "Divertido",
+        "Serio y divertido",
+        "No sé"
+      ],
+      "graded": false,
+      "routeEvidence": {
+        "photo": [
+          {
+            "id": "cat-memory",
+            "text": "Tiene un gato en la cabeza."
+          }
+        ],
+        "drawing": [
+          {
+            "id": "guitar",
+            "text": "Le gusta cantar."
+          }
+        ]
+      },
+      "feedback": "Mira la imagen. ¿Por qué?"
+    },
+    {
+      "id": "post-album",
+      "type": "composer",
+      "title": "Otra foto de Tomás",
+      "text": "Crea otra foto de Tomás.",
+      "backgrounds": [
+        "jardin",
+        "cocina",
+        "salon"
+      ],
+      "props": [
+        "gato",
+        "guitarra",
+        "pelota"
+      ],
+      "sentenceTemplates": [
+        "Tomás está en {place}.",
+        "Tiene {object}.",
+        "Le gusta {activity}."
+      ],
+      "places": {
+        "jardin": "el jardín",
+        "cocina": "la cocina",
+        "salon": "el salón"
+      },
+      "objects": {
+        "gato": "un gato",
+        "guitarra": "una guitarra",
+        "pelota": "una pelota"
+      },
+      "activities": [
+        "cantar",
+        "jugar con el gato",
+        "jugar con la pelota"
+      ],
+      "graded": false,
+      "export": "local PNG + text; no account or server"
+    },
+    {
+      "id": "post-other-route",
+      "type": "optional-reread",
+      "title": "¿Y si…?",
+      "text": "¿Quieres leer la otra historia?",
+      "graded": false,
+      "optional": true
+    }
+  ]
+}

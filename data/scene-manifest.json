@@ -1,0 +1,316 @@
+{
+  "version": 2,
+  "scenes": [
+    {
+      "id": "handover",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/s01-desktop.png",
+        "mobile": "assets/scenes/s01-mobile.png"
+      }
+    },
+    {
+      "id": "portrait",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "reference-available",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {
+        "desktop": "assets/references/scene02-desktop.png",
+        "mobile": "assets/references/scene02-mobile.png"
+      },
+      "finalImages": {
+        "desktop": null,
+        "mobile": null
+      }
+    },
+    {
+      "id": "wind",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {
+        "styleAndDesktop": "assets/references/approved-style.png"
+      },
+      "finalImages": {
+        "desktop": "assets/scenes/s03-desktop.png",
+        "mobile": "assets/scenes/s03-mobile.png"
+      }
+    },
+    {
+      "id": "choice",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "reference-available",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {
+        "desktop": "assets/references/scene04-desktop.png",
+        "mobile": "assets/references/scene04-mobile.png"
+      },
+      "finalImages": {
+        "desktop": null,
+        "mobile": null
+      }
+    },
+    {
+      "id": "cat-photo",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/a05-desktop.png",
+        "mobile": "assets/scenes/a05-mobile.png"
+      }
+    },
+    {
+      "id": "ball",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/a06-desktop.png",
+        "mobile": "assets/scenes/a06-mobile.png"
+      }
+    },
+    {
+      "id": "cat-memory",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/a07-desktop.png",
+        "mobile": "assets/scenes/a07-mobile.png"
+      }
+    },
+    {
+      "id": "drawing-start",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/b05-desktop.png",
+        "mobile": "assets/scenes/b05-mobile.png"
+      }
+    },
+    {
+      "id": "guitar",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/b06-desktop.png",
+        "mobile": "assets/scenes/b06-mobile.png"
+      }
+    },
+    {
+      "id": "drawing-done",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": "assets/scenes/b07-desktop.png",
+        "mobile": "assets/scenes/b07-mobile.png"
+      }
+    },
+    {
+      "id": "family",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": null,
+        "mobile": null
+      },
+      "variants": {
+        "photo": {
+          "finalImages": {
+            "desktop": "assets/scenes/s08-photo-desktop.png",
+            "mobile": "assets/scenes/s08-photo-mobile.png"
+          }
+        },
+        "drawing": {
+          "finalImages": {
+            "desktop": "assets/scenes/s08-drawing-desktop.png",
+            "mobile": "assets/scenes/s08-drawing-mobile.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "family-song",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": null,
+        "mobile": null
+      },
+      "variants": {
+        "photo": {
+          "finalImages": {
+            "desktop": "assets/scenes/end-song-photo-desktop.png",
+            "mobile": "assets/scenes/end-song-photo-mobile.png"
+          }
+        },
+        "drawing": {
+          "finalImages": {
+            "desktop": "assets/scenes/end-song-drawing-desktop.png",
+            "mobile": "assets/scenes/end-song-drawing-mobile.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "family-story",
+      "desktop": {
+        "aspect": "16/9",
+        "textPosition": "left",
+        "artPosition": "right"
+      },
+      "mobile": {
+        "textPosition": "below",
+        "artAspect": "4/3",
+        "scroll": "natural"
+      },
+      "productionStatus": "illustration-connected",
+      "notes": "Use approved raster references. No SVG characters. Explicit prototype placeholder until scene art is prepared. Keep photo/drawing state after route merge.",
+      "referenceImages": {},
+      "finalImages": {
+        "desktop": null,
+        "mobile": null
+      },
+      "variants": {
+        "photo": {
+          "finalImages": {
+            "desktop": "assets/scenes/end-story-photo-desktop.png",
+            "mobile": "assets/scenes/end-story-photo-mobile.png"
+          }
+        },
+        "drawing": {
+          "finalImages": {
+            "desktop": "assets/scenes/end-story-drawing-desktop.png",
+            "mobile": "assets/scenes/end-story-drawing-mobile.png"
+          }
+        }
+      }
+    }
+  ],
+  "artPipeline": "raster-png-webp"
+}

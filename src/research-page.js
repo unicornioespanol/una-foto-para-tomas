@@ -1,0 +1,15 @@
+import { el,button } from './dom.js';import { api } from './admin-api.js';import { EventQueue } from './telemetry.js';import './admin.css';
+const root=document.querySelector('#adult'),queue=new EventQueue();
+async function render(){const panel=el('section','panel');root.replaceChildren(panel);const back=el('a','back-link','← Volver al libro');back.href='/';panel.append(back,el('p','eyebrow','INFORMACIÓN PARA ADULTOS'),el('h1','','Participar en el estudio'));
+ panel.append(el('p','','La lectura es posible sin participar. El estudio registra páginas visitadas, intervalos de actividad, uso del audio, decisiones, intentos de actividades y opciones del álbum. No incluye nombres, documentos, respuestas libres ni imágenes del álbum.'),el('p','','Los datos se vinculan a un identificador aleatorio: están seudonimizados. La medida de actividad describe el uso de la interfaz, no la atención ni la comprensión. Puedes detener el registro y retirar el consentimiento desde los ajustes del libro.'));
+ const notice=el('p','status');notice.setAttribute('role','status');panel.append(notice);
+ let config;try{const r=await fetch('/api/config');config=await r.json()}catch{notice.textContent='Servidor no disponible. Puedes seguir leyendo sin participar.';return}
+ if(config.mode!=='research'){notice.textContent='La recogida de datos está desactivada.';return}
+ let status;try{status=await(await api('/api/research/status')).json()}catch{}
+ if(status?.status==='active'){
+   notice.textContent='El consentimiento está activo.';panel.append(button('Retirar el consentimiento',async()=>{await queue.meta('withdraw_pending',status.consent_id);await queue.clear();const channel=new BroadcastChannel('tomas-research');channel.postMessage('withdraw');channel.close();try{await api(`/api/research/consents/${status.consent_id}/withdraw`,{method:'POST',body:'{}'});await queue.meta('withdraw_pending',null);notice.textContent='El servidor ha confirmado la retirada.'}catch{notice.textContent='Recogida detenida en este dispositivo. La confirmación del servidor está pendiente.'}},'button danger'));return;
+ }
+ panel.append(el('p','fine-print',`Versión de la información: ${config.consent_version}. El equipo debe explicar el proyecto, la política de conservación y la forma de verificar al representante antes del estudio real.`));
+ const form=el('form'),label=el('label','field','Código entregado por el equipo de investigación'),input=el('input');input.required=true;input.autocomplete='off';label.append(input);const submit=el('button','button primary','Activar participación');submit.type='submit';form.append(label,submit);form.addEventListener('submit',async e=>{e.preventDefault();submit.disabled=true;try{await api('/api/research/consents',{method:'POST',body:JSON.stringify({code:input.value.trim(),version:config.consent_version})});input.value='';notice.textContent='Participación activada. Puedes volver al libro.';await render()}catch{notice.textContent='Código no válido o ya utilizado. Puedes leer sin participar.'}finally{submit.disabled=false}});panel.append(form)
+}
+render();

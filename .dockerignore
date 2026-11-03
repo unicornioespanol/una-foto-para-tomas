@@ -1,0 +1,16 @@
+node_modules
+.npm-cache
+.git
+.env*
+!.env.example
+runtime
+backups
+test-results
+book_update
+dist
+Una foto para Tomas.html
+offline
+*.dump
+*.backup
+*.pem
+*.key

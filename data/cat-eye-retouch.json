@@ -1,0 +1,89 @@
+[
+  {
+    "file": "assets/scenes/a05-desktop.png",
+    "regions": [
+      [
+        806,
+        653,
+        14,
+        13
+      ],
+      [
+        831,
+        676,
+        16,
+        17
+      ]
+    ],
+    "changedPixels": 245,
+    "totalPixels": 1573044,
+    "beforeSha256": "7393578c8932183d03a6aca199d05ed2df2986d132b7ff6639b949fb733562ef",
+    "afterSha256": "d850151fc184619c3423fb761ac99f69f264d2eeb97aca1ace3dcb813049d241"
+  },
+  {
+    "file": "assets/scenes/a05-mobile.png",
+    "regions": [
+      [
+        706,
+        819,
+        14,
+        20
+      ]
+    ],
+    "changedPixels": 113,
+    "totalPixels": 1573230,
+    "beforeSha256": "fa8b9ecd25da4285da0e6be548a23421b1cecf1b1c03c7bdc47da14a1859d1ec",
+    "afterSha256": "246e2fdbc024cda1925c77d394edb4d4c240f718033d5372cb1a2ee572cbb4ab"
+  },
+  {
+    "file": "assets/scenes/a06-desktop.png",
+    "regions": [
+      [
+        1102,
+        739,
+        4,
+        13
+      ]
+    ],
+    "changedPixels": 43,
+    "totalPixels": 1573044,
+    "beforeSha256": "e5f3d9ead7602f6a511577e5896d6b56ff66b9152d417b2d085d16f445d7e955",
+    "afterSha256": "89efb78d21fbc21240d8b296ecc550b896b6645f249a08a26c9db2dd5e6f57b5"
+  },
+  {
+    "file": "assets/scenes/b05-desktop.png",
+    "regions": [
+      [
+        1138,
+        567,
+        7,
+        14
+      ]
+    ],
+    "changedPixels": 68,
+    "totalPixels": 1573044,
+    "beforeSha256": "cc8c9cfd8613f83a3f5bcd906c3d7c910b57ed385eff232ebe9e37d1b577bd69",
+    "afterSha256": "6fa364b58ab4c4f6a240590c34033d2a612cf382843507a434e750cabab549f4"
+  },
+  {
+    "file": "assets/scenes/b05-mobile.png",
+    "regions": [
+      [
+        902,
+        754,
+        3,
+        13
+      ],
+      [
+        930,
+        760,
+        5,
+        15
+      ]
+    ],
+    "changedPixels": 98,
+    "totalPixels": 1573230,
+    "beforeSha256": "e869f62a9db197cac2922a73247ff95df227835ef58b7a00e1ae5abd8e0b9946",
+    "afterSha256": "596d1015b2f2e90f3ccb5cd7f684c6239777f21506b6f068e5b27b7bd1b38b5c"
+  }
+]

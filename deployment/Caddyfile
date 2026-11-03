@@ -1,0 +1,5 @@
+{$BOOK_DOMAIN} {
+    reverse_proxy 127.0.0.1:3000
+    # No access log is enabled here. Do not log cookies, tokens or request bodies.
+    header Referrer-Policy "no-referrer"
+}

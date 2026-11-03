@@ -1,0 +1,26 @@
+# Prepared configuration only; no deployment is triggered by this local file.
+services:
+  - type: web
+    name: una-foto-para-tomas
+    runtime: node
+    plan: free
+    region: frankfurt
+    autoDeployTrigger: "off"
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run server
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: TRUST_PROXY
+        value: "1"
+      - key: TELEMETRY_MODE
+        value: "off"
+      - key: RESEARCH_PROJECT_ID
+        value: tomas
+      - key: PUBLIC_ORIGIN
+        sync: false
+      - key: DATABASE_URL
+        sync: false

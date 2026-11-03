@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "approved-2026-10-22-v1",
+  "bookId": "una-foto-para-tomas",
+  "title": "Una foto para Tomás",
+  "lang": "es",
+  "speechLang": "es-MX",
+  "ageRange": [
+    7,
+    10
+  ],
+  "entry": "s01",
+  "routeValues": [
+    "photo",
+    "drawing"
+  ],
+  "endingValues": [
+    "song",
+    "story"
+  ],
+  "nodes": [
+    {
+      "id": "s01",
+      "kind": "story",
+      "editorTitle": "Сегодня особенный день",
+      "sceneId": "handover",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "Hoy es el Día de Muertos.",
+          "speaker": "narrator",
+          "speechText": "Hoy es el Día de Muertos."
+        },
+        {
+          "id": "line-02",
+          "text": "Lucía y su abuela preparan una ofrenda para Tomás.",
+          "speaker": "narrator",
+          "speechText": "Lucía y su abuela preparan una ofrenda para Tomás."
+        },
+        {
+          "id": "line-03",
+          "text": "—La foto es para ti, Lucía.",
+          "speaker": "abuela",
+          "speechText": "La foto es para ti, Lucía."
+        },
+        {
+          "id": "line-04",
+          "text": "—¡Yo pongo la foto!",
+          "speaker": "lucia",
+          "speechText": "¡Yo pongo la foto!"
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "s02"
+    },
+    {
+      "id": "s02",
+      "kind": "story",
+      "editorTitle": "Очень серьёзный дедушка",
+      "sceneId": "portrait",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "Hay flores naranjas, agua y pan.",
+          "speaker": "narrator",
+          "speechText": "Hay flores naranjas, agua y pan."
+        },
+        {
+          "id": "line-02",
+          "text": "Lucía mira la foto.",
+          "speaker": "narrator",
+          "speechText": "Lucía mira la foto."
+        },
+        {
+          "id": "line-03",
+          "text": "—El abuelo tiene gafas y bigote. Está muy serio.",
+          "speaker": "lucia",
+          "speechText": "El abuelo tiene gafas y bigote. Está muy serio."
+        },
+        {
+          "id": "line-04",
+          "text": "—¿Serio?",
+          "speaker": "abuela",
+          "speechText": "¿Serio?"
+        },
+        {
+          "id": "line-05",
+          "text": "La abuela sonríe.",
+          "speaker": "narrator",
+          "speechText": "La abuela sonríe."
+        },
+        {
+          "id": "line-06",
+          "text": "—Bueno…",
+          "speaker": "abuela",
+          "speechText": "Bueno…"
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "s03"
+    },
+    {
+      "id": "s03",
+      "kind": "story",
+      "editorTitle": "Порыв ветра",
+      "sceneId": "wind",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "La puerta está abierta.",
+          "speaker": "narrator",
+          "speechText": "La puerta está abierta."
+        },
+        {
+          "id": "line-02",
+          "text": "¡FUUU!",
+          "speaker": "narrator",
+          "speechText": "¡FUUU!"
+        },
+        {
+          "id": "line-03",
+          "text": "La foto vuela hacia el patio.",
+          "speaker": "narrator",
+          "speechText": "La foto vuela hacia el patio."
+        },
+        {
+          "id": "line-04",
+          "text": "—¡La foto del abuelo!",
+          "speaker": "lucia",
+          "speechText": "¡La foto del abuelo!"
+        },
+        {
+          "id": "line-05",
+          "text": "Lucía tiene las manos vacías.",
+          "speaker": "narrator",
+          "speechText": "Lucía tiene las manos vacías."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "s04",
+      "animation": {
+        "id": "photo-flight",
+        "trigger": "enter",
+        "maxMs": 1200,
+        "replayOnBack": false,
+        "reducedMotion": "static-end"
+      }
+    },
+    {
+      "id": "s04",
+      "kind": "choice",
+      "editorTitle": "Первый выбор",
+      "sceneId": "choice",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "La familia llega pronto.",
+          "speaker": "narrator",
+          "speechText": "La familia llega pronto."
+        },
+        {
+          "id": "line-02",
+          "text": "—Podemos buscar la foto.",
+          "speaker": "abuela",
+          "speechText": "Podemos buscar la foto."
+        },
+        {
+          "id": "line-03",
+          "text": "Dice la abuela.",
+          "speaker": "narrator",
+          "speechText": "Dice la abuela."
+        },
+        {
+          "id": "line-04",
+          "text": "—O podemos dibujar a Tomás.",
+          "speaker": "abuela",
+          "speechText": "O podemos dibujar a Tomás."
+        },
+        {
+          "id": "line-05",
+          "text": "¿Qué hacemos?",
+          "speaker": "narrator",
+          "speechText": "¿Qué hacemos?"
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "choices": [
+        {
+          "id": "choose-photo",
+          "label": "Buscar la foto.",
+          "to": "a05",
+          "set": {
+            "route": "photo"
+          }
+        },
+        {
+          "id": "choose-drawing",
+          "label": "Dibujar a Tomás.",
+          "to": "b05",
+          "set": {
+            "route": "drawing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a05",
+      "kind": "story",
+      "editorTitle": "Хозяйка фотографии",
+      "sceneId": "cat-photo",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "En el patio hay un gato negro.",
+          "speaker": "narrator",
+          "speechText": "En el patio hay un gato negro."
+        },
+        {
+          "id": "line-02",
+          "text": "La foto está debajo del gato.",
+          "speaker": "narrator",
+          "speechText": "La foto está debajo del gato."
+        },
+        {
+          "id": "line-03",
+          "text": "—Hola, gato. Esa foto es de mi abuelo.",
+          "speaker": "lucia",
+          "speechText": "Hola, gato. Esa foto es de mi abuelo."
+        },
+        {
+          "id": "line-04",
+          "text": "El gato cierra los ojos.",
+          "speaker": "narrator",
+          "speechText": "El gato cierra los ojos."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "a06"
+    },
+    {
+      "id": "a06",
+      "kind": "story",
+      "editorTitle": "Обмен",
+      "sceneId": "ball",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "Al lado de la puerta hay una pelota.",
+          "speaker": "narrator",
+          "speechText": "Al lado de la puerta hay una pelota."
+        },
+        {
+          "id": "line-02",
+          "text": "—Mira, gato. ¡Una pelota!",
+          "speaker": "lucia",
+          "speechText": "Mira, gato. ¡Una pelota!"
+        },
+        {
+          "id": "line-03",
+          "text": "Lucía mueve la pelota. El gato corre.",
+          "speaker": "narrator",
+          "speechText": "Lucía mueve la pelota. El gato corre."
+        },
+        {
+          "id": "line-04",
+          "text": "—Y yo tengo la foto.",
+          "speaker": "lucia",
+          "speechText": "Y yo tengo la foto."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "a07",
+      "animation": {
+        "id": "ball-and-cat",
+        "trigger": "reveal",
+        "maxMs": 1200,
+        "reducedMotion": "static-end"
+      }
+    },
+    {
+      "id": "a07",
+      "kind": "story",
+      "editorTitle": "Дедушка и кошки",
+      "sceneId": "cat-memory",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "—¡Aquí está!",
+          "speaker": "lucia",
+          "speechText": "¡Aquí está!"
+        },
+        {
+          "id": "line-02",
+          "text": "Dice Lucía.",
+          "speaker": "narrator",
+          "speechText": "Dice Lucía."
+        },
+        {
+          "id": "line-03",
+          "text": "—Y aquí tengo otra foto.",
+          "speaker": "abuela",
+          "speechText": "Y aquí tengo otra foto."
+        },
+        {
+          "id": "line-04",
+          "text": "Dice la abuela. Lucía mira.",
+          "speaker": "narrator",
+          "speechText": "Dice la abuela. Lucía mira."
+        },
+        {
+          "id": "line-05",
+          "text": "—¡El abuelo tiene un gato en la cabeza!",
+          "speaker": "lucia",
+          "speechText": "¡El abuelo tiene un gato en la cabeza!"
+        },
+        {
+          "id": "line-06",
+          "text": "Las dos se ríen.",
+          "speaker": "narrator",
+          "speechText": "Las dos se ríen."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "s08"
+    },
+    {
+      "id": "b05",
+      "kind": "story",
+      "editorTitle": "Большие усы",
+      "sceneId": "drawing-start",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "Lucía dibuja una cara.",
+          "speaker": "narrator",
+          "speechText": "Lucía dibuja una cara."
+        },
+        {
+          "id": "line-02",
+          "text": "—Tiene gafas… y bigote.",
+          "speaker": "lucia",
+          "speechText": "Tiene gafas… y bigote."
+        },
+        {
+          "id": "line-03",
+          "text": "Un bigote muy, muy grande.",
+          "speaker": "narrator",
+          "speechText": "Un bigote muy, muy grande."
+        },
+        {
+          "id": "line-04",
+          "text": "—¿Así, abuela?",
+          "speaker": "lucia",
+          "speechText": "¿Así, abuela?"
+        },
+        {
+          "id": "line-05",
+          "text": "—Sí… pero falta algo.",
+          "speaker": "abuela",
+          "speechText": "Sí… pero falta algo."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "b06"
+    },
+    {
+      "id": "b06",
+      "kind": "story",
+      "editorTitle": "Чего не хватает",
+      "sceneId": "guitar",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "La abuela tiene una guitarra.",
+          "speaker": "narrator",
+          "speechText": "La abuela tiene una guitarra."
+        },
+        {
+          "id": "line-02",
+          "text": "—A Tomás le gusta cantar.",
+          "speaker": "abuela",
+          "speechText": "A Tomás le gusta cantar."
+        },
+        {
+          "id": "line-03",
+          "text": "La abuela canta:",
+          "speaker": "narrator",
+          "speechText": "La abuela canta:"
+        },
+        {
+          "id": "line-04",
+          "text": "—¡Laaa, la, laaaa!",
+          "speaker": "abuela",
+          "speechText": "¡Laaa, la, laaaa!"
+        },
+        {
+          "id": "line-05",
+          "text": "El gato entra en la cocina… y sale otra vez.",
+          "speaker": "narrator",
+          "speechText": "El gato entra en la cocina… y sale otra vez."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "b07"
+    },
+    {
+      "id": "b07",
+      "kind": "story",
+      "editorTitle": "Теперь похож",
+      "sceneId": "drawing-done",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "Lucía dibuja una boca grande y una guitarra.",
+          "speaker": "narrator",
+          "speechText": "Lucía dibuja una boca grande y una guitarra."
+        },
+        {
+          "id": "line-02",
+          "text": "—¿Ahora?",
+          "speaker": "lucia",
+          "speechText": "¿Ahora?"
+        },
+        {
+          "id": "line-03",
+          "text": "—¡Ahora sí!",
+          "speaker": "abuela",
+          "speechText": "¡Ahora sí!"
+        },
+        {
+          "id": "line-04",
+          "text": "Dice la abuela. En la ofrenda hay un dibujo de Tomás.",
+          "speaker": "narrator",
+          "speechText": "Dice la abuela. En la ofrenda hay un dibujo de Tomás."
+        },
+        {
+          "id": "line-05",
+          "text": "Y tiene un bigote enorme.",
+          "speaker": "narrator",
+          "speechText": "Y tiene un bigote enorme."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "next": "s08"
+    },
+    {
+      "id": "s08",
+      "kind": "choice",
+      "editorTitle": "Семья собирается",
+      "sceneId": "family",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "Ahora la familia está aquí.",
+          "speaker": "narrator",
+          "speechText": "Ahora la familia está aquí."
+        },
+        {
+          "id": "line-02",
+          "text": "Todos miran la ofrenda.",
+          "speaker": "narrator",
+          "speechText": "Todos miran la ofrenda."
+        },
+        {
+          "id": "line-03",
+          "text": "—Lucía, ¿una canción o una historia?",
+          "speaker": "abuela",
+          "speechText": "Lucía, ¿una canción o una historia?"
+        },
+        {
+          "id": "line-04",
+          "text": "Pregunta la abuela.",
+          "speaker": "narrator",
+          "speechText": "Pregunta la abuela."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "choices": [
+        {
+          "id": "choose-song",
+          "label": "Una canción.",
+          "to": "end-song",
+          "set": {
+            "ending": "song"
+          }
+        },
+        {
+          "id": "choose-story",
+          "label": "Una historia.",
+          "to": "end-story",
+          "set": {
+            "ending": "story"
+          }
+        }
+      ]
+    },
+    {
+      "id": "end-song",
+      "kind": "story",
+      "editorTitle": "Финал с песней",
+      "sceneId": "family-song",
+      "segments": [
+        {
+          "id": "line-01",
+          "text": "La abuela canta. Lucía canta.",
+          "speaker": "narrator",
+          "speechText": "La abuela canta. Lucía canta."
+        },
+        {
+          "id": "line-02",
+          "text": "Mamá y su hermano también.",
+          "speaker": "narrator",
+          "speechText": "Mamá y su hermano también."
+        },
+        {
+          "id": "line-03",
+          "text": "El gato mira a la familia… y sale al patio.",
+          "speaker": "narrator",
+          "speechText": "El gato mira a la familia… y sale al patio."
+        },
+        {
+          "id": "line-04",
+          "text": "Todos se ríen.",
+          "speaker": "narrator",
+          "speechText": "Todos se ríen."
+        },
+        {
+          "id": "line-05",
+          "text": "—¡Tomás también canta muy fuerte!",
+          "speaker": "abuela",
+          "speechText": "¡Tomás también canta muy fuerte!"
+        },
+        {
+          "id": "line-06",
+          "text": "Dice la abuela.",
+          "speaker": "narrator",
+          "speechText": "Dice la abuela."
+        }
+      ],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "terminal": true
+    },
+    {
+      "id": "end-story",
+      "kind": "story",
+      "editorTitle": "Финал с историей",
+      "sceneId": "family-story",
+      "segments": [],
+      "pageLabel": null,
+      "audio": {
+        "mode": "tts",
+        "src": null
+      },
+      "terminal": true,
+      "variants": {
+        "photo": {
+          "segments": [
+            {
+              "id": "line-01",
+              "text": "—Tomás tiene un gato. Se llama Capitán. Y su sitio favorito está aquí…",
+              "speaker": "abuela",
+              "speechText": "Tomás tiene un gato. Se llama Capitán. Y su sitio favorito está aquí…"
+            },
+            {
+              "id": "line-02",
+              "text": "La abuela pone una mano en su cabeza.",
+              "speaker": "narrator",
+              "speechText": "La abuela pone una mano en su cabeza."
+            },
+            {
+              "id": "line-03",
+              "text": "Hoy el gato se queda.",
+              "speaker": "narrator",
+              "speechText": "Hoy el gato se queda."
+            },
+            {
+              "id": "line-04",
+              "text": "La familia escucha. Hay muchas historias de Tomás.",
+              "speaker": "narrator",
+              "speechText": "La familia escucha. Hay muchas historias de Tomás."
+            }
+          ]
+        },
+        "drawing": {
+          "segments": [
+            {
+              "id": "line-01",
+              "text": "—Tomás tiene una guitarra. Cuando canta, Capitán, su gato, sale de casa…",
+              "speaker": "abuela",
+              "speechText": "Tomás tiene una guitarra. Cuando canta, Capitán, su gato, sale de casa…"
+            },
+            {
+              "id": "line-02",
+              "text": "—¡Como nuestro gato!",
+              "speaker": "lucia",
+              "speechText": "¡Como nuestro gato!"
+            },
+            {
+              "id": "line-03",
+              "text": "Dice Lucía. Hoy el gato se queda.",
+              "speaker": "narrator",
+              "speechText": "Dice Lucía. Hoy el gato se queda."
+            },
+            {
+              "id": "line-04",
+              "text": "La familia escucha. Hay muchas historias de Tomás.",
+              "speaker": "narrator",
+              "speechText": "La familia escucha. Hay muchas historias de Tomás."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "statefulSceneSlots": {
+    "ofrenda-image": {
+      "photo": "photo-tomas",
+      "drawing": "drawing-tomas-guitar"
+    }
+  },
+  "notes": [
+    "Spanish is the book language. English attachments are format references only.",
+    "Narrative unchanged; display segments separate punctuation and dialogue for narration.",
+    "Tomás appears only in images and explicitly framed family memories."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "una-foto-para-tomas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": "24.x"},
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node tools/standalone.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --test tools/check.mjs tools/storage.test.mjs tools/file-audio.test.mjs",
+    "test:browser": "node tools/browser-check.mjs",
+    "server": "node --env-file-if-exists=.env server/index.mjs",
+    "db:migrate": "node --env-file-if-exists=.env server/cli.mjs migrate",
+    "admin:create": "node --env-file-if-exists=.env server/cli.mjs create-admin",
+    "db:check": "node --env-file-if-exists=.env server/cli.mjs check",
+    "test:deploy": "node --test tools/deploy.test.mjs",
+    "test:postgres": "node --env-file-if-exists=.env.neon.local tools/postgres-check.mjs",
+    "test:server": "node --test tools/server.test.mjs",
+    "test:research": "node tools/research-browser.mjs",
+    "test:layout": "node tools/update-browser.mjs",
+    "assets:prepare": "node tools/prepare-assets.mjs",
+    "test:telemetry": "node tools/telemetry-browser.mjs",
+    "test:audio": "node tools/audio-browser.mjs",
+    "test:audio-ui": "node tools/final-audio-ui-browser.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.11",
+    "@playwright/test": "^1.58.2",
+    "sharp": "^0.35.5",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  }
+}
